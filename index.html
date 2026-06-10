@@ -250,6 +250,82 @@
       color: var(--text);
       background: rgba(43,0,255,0.08);
     }
+
+    /* ── Internship ────────────────────────────────── */
+    #internship { border-top: 1px solid var(--border); }
+    #internship .internship-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: start;
+    }
+    #internship .company-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 8px 16px;
+      margin-bottom: 24px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    #internship .company-badge .dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+    #internship .role-title {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+      letter-spacing: 0.04em;
+    }
+    #internship .internship-desc {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.8;
+      margin-bottom: 28px;
+    }
+    #internship ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    #internship ul li {
+      font-size: 14px;
+      color: var(--text-muted);
+      padding-left: 20px;
+      position: relative;
+      line-height: 1.6;
+    }
+    #internship ul li::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 9px;
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+    #internship .ig-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    #internship .ig-grid img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      transition: transform 0.3s, border-color 0.3s;
+    }
+    #internship .ig-grid img:hover {
+      transform: scale(1.02);
+      border-color: var(--accent);
+    }
   </style>
 </head>
 <body>
@@ -342,6 +418,37 @@
         <span class="skill-tag reveal">Excel / MegaStat</span>
         <span class="skill-tag reveal">Chinese (Native)</span>
         <span class="skill-tag reveal">English (Fluent)</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERNSHIP -->
+  <section id="internship">
+    <div class="section-inner">
+      <p class="section-label reveal">Current Internship</p>
+      <h2 class="section-title reveal">Creator Brand &amp; Social Media<br>@ silueta.ai</h2>
+      <div class="internship-grid">
+        <div>
+          <div class="company-badge reveal">
+            <span class="dot"></span>
+            silueta.ai — Active 2025
+          </div>
+          <p class="role-title reveal">Creator Brand &amp; Social Media Marketing Intern</p>
+          <p class="internship-desc reveal">
+            Silueta is a creator-commerce startup building infrastructure for creator-led brands — where tastemakers curate, audiences validate, and the platform produces. As one of the first marketing hires, I work directly with the founding team to build the brand's social presence and creator partner pipeline from the ground up.
+          </p>
+          <ul>
+            <li class="reveal">Built an AI-augmented content pipeline — researching competitor accounts, analyzing traffic sources, and auto-generating 25–35 weekly IG/TikTok content suggestions to accelerate creative output for a fast-paced startup launch.</li>
+            <li class="reveal">Conducted competitive research and prospected creator partner accounts via social platforms — qualifying fit, analyzing traffic sources, and producing a weekly outreach target list to support the founding team's BD pipeline.</li>
+            <li class="reveal">Grew the official @silueta_ai Instagram account from zero, establishing brand voice and editorial aesthetic across all posts.</li>
+          </ul>
+        </div>
+        <div class="ig-grid reveal">
+          <img src="assets/silueta-post-2.png" alt="silueta.ai Instagram profile">
+          <img src="assets/silueta-post-1.png" alt="silueta.ai content feed">
+          <img src="assets/silueta-post-3.png" alt="silueta.ai post — skin campaign">
+          <img src="assets/silueta-post-4.png" alt="silueta.ai post — brand campaign">
+        </div>
       </div>
     </div>
   </section>
