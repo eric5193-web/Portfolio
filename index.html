@@ -378,6 +378,47 @@
       font-size: 12px;
       padding: 9px 18px;
     }
+
+    /* ── Media ─────────────────────────────────────── */
+    #media { border-top: 1px solid var(--border); }
+    #media .media-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+    .media-item { display: flex; flex-direction: column; gap: 16px; }
+    .media-item .video-wrap {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+    }
+    .media-item .video-wrap iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: none;
+    }
+    .media-item .media-brand {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 6px;
+    }
+    .media-item .media-title {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    .media-item .media-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
   </style>
 </head>
 <body>
@@ -532,6 +573,49 @@
           </p>
           <div class="card-links">
             <a href="assets/applebees-deck.pdf" target="_blank" class="btn-primary">View Analysis</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MEDIA -->
+  <section id="media">
+    <div class="section-inner">
+      <p class="section-label reveal">Media &amp; Campaigns</p>
+      <h2 class="section-title reveal">On-camera brand work.</h2>
+      <div class="media-grid">
+
+        <div class="media-item reveal">
+          <div class="video-wrap">
+            <iframe
+              src="https://www.youtube.com/embed/06l52ERbgaE"
+              title="Volkswagen Commercial Vehicles Campaign"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="media-meta">
+            <p class="media-brand">Volkswagen</p>
+            <p class="media-title">Commercial Vehicles Campaign</p>
+            <p class="media-desc">Selected as campaign-facing talent for an integrated Volkswagen Commercial Vehicles launch across TV, social, and digital platforms — contributing to 2.4M+ YouTube impressions.</p>
+          </div>
+        </div>
+
+        <div class="media-item reveal">
+          <div class="video-wrap">
+            <iframe
+              src="https://www.youtube.com/embed/qjB16vRecDs"
+              title="Chang Hwa Commercial Bank Visual Campaign"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="media-meta">
+            <p class="media-brand">Chang Hwa Commercial Bank</p>
+            <p class="media-title">Visual Campaign Ambassador</p>
+            <p class="media-desc">Selected as campaign visual ambassador for a two-year multi-platform brand campaign across Instagram, YouTube, TV, and digital media.</p>
           </div>
         </div>
 
