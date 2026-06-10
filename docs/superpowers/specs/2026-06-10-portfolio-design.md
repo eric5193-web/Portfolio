@@ -27,12 +27,18 @@ A single-page, scroll-based personal portfolio site built in pure HTML/CSS/JS. D
 - Subtle fade-in on load
 
 ### 2. About
-- Third-person bio (155 words, approved):
+Two sub-sections to satisfy Part A items 1 and 2:
+
+**Personal Statement** (career goals + philosophy, ~2 sentences, displayed as a pull-quote above the bio):
+> I believe the best marketing sits at the intersection of data and story — where analytics inform the message and creative execution makes it land. My goal is to build campaigns that don't just reach audiences but move them, using AI-augmented workflows to close the gap between insight and output.
+
+**Short Bio** (155 words, third-person, approved):
   > Poyuan (Eric) Wang is an NYU Integrated Marketing graduate student specializing in marketing analytics and AI-augmented brand strategy. Originally trained as a professional dancer — earning a full scholarship BFA in Classical Chinese Dance and performing before 1M+ live audiences annually with Shen Yun Performing Arts across five continents — Eric brings a rare combination of creative instinct and analytical precision to modern marketing.
   >
   > He compresses what once required an entire team — research, targeting, creative production, automation — into a single AI-augmented workflow, delivering faster iteration and data-informed decisions without sacrificing creative quality. His work spans social media growth, direct marketing ROI modeling, competitive media planning, and creator brand strategy.
   >
   > Currently interning at silueta.ai as a Creator Brand & Social Media Marketing Intern, Eric is building the brand's content pipeline and creator outreach infrastructure from the ground up for a fast-paced startup launch.
+
 - Right side: stat strip — `1M+ live audiences · 2 brand campaigns · 2 course projects`
 
 ### 3. Skills
@@ -42,16 +48,16 @@ SQL · Google Ads · Meta Ads Manager · GA4 · Tableau · Canva · CapCut · Ex
 ### 4. Internship: silueta.ai *(Part B — primary work samples)*
 - Left column: role title, company description, bullet points of work done (AI content pipeline, creator research/outreach)
 - Right column: 2×2 grid of Instagram post screenshots from the silueta_ai account
-- Source images: user-provided screenshots
+- Source images: 4 screenshots from conversation — need to be saved as image files and copied to `assets/`
 
 ### 5. Course Projects *(Part B — project work + visual presentations)*
 Two cards side by side:
 - **Mercedes-Benz GLC Campaign**
-  - Opens vibe-coded landing page: `/Users/wangbo/Desktop/NYU/Second semaster/Campaign 2/MB Final Presentation/Landing page_dark.html`
-  - Links to PDF deck: `MercedesBenz_Campaign_Final.pdf`
+  - Card links to vibe-coded landing page (copied to `assets/mb-landing/Landing page_dark.html`) — opens in new tab
+  - Secondary link to PDF deck (copied to `assets/mb-deck.pdf`)
 - **Applebee's RFM Analysis**
   - Description: RFM segmentation, data visualization, 6-KPI dashboard
-  - Links to PDF deck: `Applebees_Finalppt_EricWang.pptx.pdf`
+  - Card links to PDF deck (copied to `assets/applebees-deck.pdf`) — opens in new tab
 
 ### 6. Media & Campaigns *(Part B — Art/Media)*
 Two embedded YouTube players:
@@ -104,7 +110,9 @@ portfolio/
 │   ├── silueta-post-3.jpg
 │   ├── silueta-post-4.jpg
 │   ├── mb-deck.pdf
-│   └── applebees-deck.pdf
+│   ├── applebees-deck.pdf
+│   └── mb-landing/
+│       └── Landing page_dark.html (+ any linked assets)
 └── docs/
     └── superpowers/
         └── specs/
