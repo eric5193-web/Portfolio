@@ -25,13 +25,16 @@ NYU Integrated Marketing final internship portfolio.
 | 1 | Hero | — |
 | 2 | About | Part A: Personal Statement + Short Bio |
 | 3 | Skills | Part A: Skills & Abilities |
-| 4 | silueta.ai Internship | Part B: Internship Work Samples |
-| 5 | Course Projects | Part B: Project Work + Visual Presentations |
-| 6 | Media & Campaigns | Part B: Art/Media |
-| 7 | Contact | Part A: Contact Information |
+| 4 | Experience | Part A: Accomplishments |
+| 5 | silueta.ai Internship | Part B: Internship Work Samples |
+| 6 | Course Projects | Part B: Project Work + Visual Presentations |
+| 7 | Media & Campaigns | Part B: Art/Media |
+| 8 | Contact | Part A: Contact Information |
 
-**Part A coverage:** Personal statement · Bio · Skills · Accomplishments · Contact (5 of 5)
+**Part A coverage:** Personal statement · Bio · Skills · Accomplishments (Experience timeline) · Contact (5 of 5)
 **Part B coverage:** Internship work · Past media/campaign work · Course projects · Visual presentations · Art/Media (5–6 of 8)
+
+**Certifications shown:** GA4 (Google, 2026) · BFA Classical Chinese Dance (Full Scholarship) · Volkswagen Campaign · Chang Hwa Bank Ambassador
 
 ---
 
@@ -51,6 +54,18 @@ assets/
     ├── ChatGPT Image Apr 28, 2026, 10_21_54 AM.png         # Hero image for landing page
     └── The New GLC SUV - Mercedes-Benz Middle East (1080p).mp4  # Video asset
 ```
+
+---
+
+## Recent Changes
+
+| Date | Change |
+|---|---|
+| 2026-06-10 | Added Experience section with full timeline (Sunshine Dance, Fu Hsing, Shen Yun, Rotary) |
+| 2026-06-10 | Added phone number (845) 800-9327 to contact section |
+| 2026-06-10 | Updated email to bobopoponyu@gmail.com |
+| 2026-06-10 | Fixed YouTube embeds with click-to-load thumbnail facade |
+| 2026-06-10 | Instagram grid: profile spans full top row, 2 posts below |
 
 ---
 
