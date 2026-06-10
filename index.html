@@ -75,12 +75,19 @@
       opacity: 1;
       transform: translateY(0);
     }
+    @media (prefers-reduced-motion: reduce) {
+      .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
+    }
   </style>
 </head>
 <body>
 
-  <nav>
-    <span class="logo">Eric Wang</span>
+  <nav aria-label="Primary">
+    <a href="#" class="logo" aria-label="Eric Wang — home">Eric Wang</a>
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#internship">Internship</a></li>
