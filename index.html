@@ -226,6 +226,30 @@
       letter-spacing: 0.06em;
       text-transform: uppercase;
     }
+
+    /* ── Skills ───────────────────────────────────── */
+    #skills { background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    #skills .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .skill-tag {
+      display: inline-block;
+      padding: 8px 18px;
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-muted);
+      transition: border-color 0.2s, color 0.2s, background 0.2s;
+      cursor: default;
+    }
+    .skill-tag:hover {
+      border-color: var(--accent);
+      color: var(--text);
+      background: rgba(43,0,255,0.08);
+    }
   </style>
 </head>
 <body>
@@ -298,6 +322,26 @@
             <div class="stat-label">Enrollment growth driven</div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-inner">
+      <p class="section-label reveal">Skills &amp; Tools</p>
+      <h2 class="section-title reveal">What I work with.</h2>
+      <div class="skills-grid">
+        <span class="skill-tag reveal">SQL</span>
+        <span class="skill-tag reveal">Google Ads</span>
+        <span class="skill-tag reveal">Meta Ads Manager</span>
+        <span class="skill-tag reveal">GA4</span>
+        <span class="skill-tag reveal">Tableau</span>
+        <span class="skill-tag reveal">Canva</span>
+        <span class="skill-tag reveal">CapCut</span>
+        <span class="skill-tag reveal">Excel / MegaStat</span>
+        <span class="skill-tag reveal">Chinese (Native)</span>
+        <span class="skill-tag reveal">English (Fluent)</span>
       </div>
     </div>
   </section>
