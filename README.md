@@ -10,7 +10,8 @@ NYU Integrated Marketing final internship portfolio.
 | Field | Value |
 |---|---|
 | Name | Poyuan (Eric) Wang |
-| Email | pw2591@nyu.edu |
+| Email | bobopoponyu@gmail.com |
+| Phone | (845) 800-9327 |
 | LinkedIn | linkedin.com/in/poyuan-wang-393751360 |
 | Program | M.S. Integrated Marketing, NYU (2025–2026) |
 | Internship | Creator Brand & Social Media Marketing Intern, silueta.ai |
@@ -39,8 +40,7 @@ NYU Integrated Marketing final internship portfolio.
 ```
 assets/
 ├── eric-headshot.png          # Professional headshot (black turtleneck, studio)
-├── silueta-post-1.png         # silueta_ai Instagram — feed grid screenshot
-├── silueta-post-2.png         # silueta_ai Instagram — profile page screenshot
+├── silueta-post-2.png         # silueta_ai Instagram — profile page (spans full top row)
 ├── silueta-post-3.png         # silueta_ai Instagram — "my followers ask..." post
 ├── silueta-post-4.png         # silueta_ai Instagram — "you've already built..." post
 ├── mb-deck.pdf                # Mercedes-Benz GLC Campaign final presentation
@@ -87,7 +87,7 @@ Dark & modern. Single-page scroll. Fade-in on scroll via IntersectionObserver. D
 
 1. Push this repo to GitHub
 2. Go to **Settings → Pages → Source: main branch / root**
-3. GitHub will publish at `https://<your-username>.github.io/portfolio`
+3. GitHub publishes at `https://eric5193-web.github.io/Portfolio/`
 4. Paste that URL into NYU submission
 
 ---
