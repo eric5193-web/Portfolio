@@ -452,6 +452,36 @@
       color: var(--text-muted);
       border-top: 1px solid var(--border);
     }
+
+    /* ── Responsive ────────────────────────────────── */
+    @media (max-width: 768px) {
+      nav { padding: 16px 20px; }
+      nav ul { gap: 18px; }
+      nav ul a { font-size: 12px; }
+
+      #hero {
+        grid-template-columns: 1fr;
+        padding: 100px 24px 60px;
+        text-align: center;
+      }
+      #hero .subtitle { max-width: 100%; }
+      #hero .cta-group { justify-content: center; }
+      #hero .hero-image { order: -1; }
+      #hero .hero-image img { width: 240px; height: 300px; }
+
+      #about .about-grid { grid-template-columns: 1fr; gap: 48px; }
+      #about .stats { flex-direction: row; flex-wrap: wrap; }
+      #about .stat-item { flex: 1; min-width: 120px; }
+
+      #internship .internship-grid { grid-template-columns: 1fr; gap: 48px; }
+      #projects .projects-grid { grid-template-columns: 1fr; }
+      #media .media-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 480px) {
+      nav ul { display: none; }
+      #hero h1 { font-size: 2.2rem; }
+    }
   </style>
 </head>
 <body>
