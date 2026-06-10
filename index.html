@@ -251,6 +251,111 @@
       background: rgba(43,0,255,0.08);
     }
 
+    /* ── Experience ───────────────────────────────── */
+    #experience { border-top: 1px solid var(--border); }
+    #experience .exp-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      position: relative;
+    }
+    #experience .exp-list::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 0; bottom: 0;
+      width: 2px;
+      background: var(--border);
+    }
+    #experience .exp-item {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      gap: 40px;
+      padding: 36px 0 36px 32px;
+      border-bottom: 1px solid var(--border);
+      position: relative;
+    }
+    #experience .exp-item:last-child { border-bottom: none; }
+    #experience .exp-item::before {
+      content: '';
+      position: absolute;
+      left: -5px; top: 44px;
+      width: 12px; height: 12px;
+      border-radius: 50%;
+      background: var(--accent);
+      border: 2px solid var(--bg);
+    }
+    #experience .exp-meta { padding-top: 4px; }
+    #experience .exp-date {
+      font-size: 12px;
+      color: var(--text-muted);
+      letter-spacing: 0.06em;
+      margin-bottom: 6px;
+    }
+    #experience .exp-company {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+    #experience .exp-location {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    #experience .exp-content { }
+    #experience .exp-role {
+      font-size: 17px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      letter-spacing: -0.01em;
+    }
+    #experience .exp-bullets {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    #experience .exp-bullets li {
+      font-size: 14px;
+      color: var(--text-muted);
+      padding-left: 16px;
+      position: relative;
+      line-height: 1.6;
+    }
+    #experience .exp-bullets li::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 8px;
+      width: 5px; height: 5px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+    #experience .cert-strip {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 48px;
+      padding-top: 40px;
+      border-top: 1px solid var(--border);
+    }
+    .cert-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 18px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-muted);
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .cert-badge:hover { border-color: var(--accent); color: var(--text); }
+    .cert-badge .cert-dot {
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
     /* ── Internship ────────────────────────────────── */
     #internship { border-top: 1px solid var(--border); }
     #internship .internship-grid {
@@ -498,6 +603,7 @@
       #about .stats { flex-direction: row; flex-wrap: wrap; }
       #about .stat-item { flex: 1; min-width: 120px; }
 
+      #experience .exp-item { grid-template-columns: 1fr; gap: 8px; }
       #internship .internship-grid { grid-template-columns: 1fr; gap: 48px; }
       #projects .projects-grid { grid-template-columns: 1fr; }
       #media .media-grid { grid-template-columns: 1fr; }
@@ -515,6 +621,7 @@
     <a href="#" class="logo" aria-label="Eric Wang — home">Eric Wang</a>
     <ul>
       <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
       <li><a href="#internship">Internship</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#media">Media</a></li>
@@ -600,6 +707,88 @@
         <span class="skill-tag reveal">Chinese (Native)</span>
         <span class="skill-tag reveal">English (Fluent)</span>
       </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="section-inner">
+      <p class="section-label reveal">Experience</p>
+      <h2 class="section-title reveal">Where I've built things.</h2>
+
+      <div class="exp-list">
+
+        <div class="exp-item reveal">
+          <div class="exp-meta">
+            <p class="exp-date">Jun 2025 – Present</p>
+            <p class="exp-company">Sunshine Dance NYC</p>
+            <p class="exp-location">New York, US</p>
+          </div>
+          <div class="exp-content">
+            <p class="exp-role">Community Marketing Instructor</p>
+            <ul class="exp-bullets">
+              <li>Drove 23% enrollment growth via community-centered programming, sustaining 70% retention across a multicultural adult cohort (ages 27–45).</li>
+              <li>Designed and executed bilingual audience-growth content strategy increasing Instagram + RedNote community size from 2.6K to 3.4K followers, improving referral-based enrollment conversion by 15%.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-item reveal">
+          <div class="exp-meta">
+            <p class="exp-date">Sep 2023 – Jun 2025</p>
+            <p class="exp-company">Fu Hsing Academy &amp; Yunlin County Niaosong High School</p>
+            <p class="exp-location">Taipei, Taiwan</p>
+          </div>
+          <div class="exp-content">
+            <p class="exp-role">Curriculum Designer &amp; Dance Instructor</p>
+            <ul class="exp-bullets">
+              <li>Designed and delivered artist-focused marketing curriculum covering personal branding, collaboration outreach, and audience-building frameworks for emerging dance students.</li>
+              <li>Guided students in developing portfolio positioning and cross-platform visibility strategies for performance recruitment and institutional showcases.</li>
+              <li>Led three concurrent classes across 45+ students, managing curriculum and rehearsal coordination through to public-facing performances.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-item reveal">
+          <div class="exp-meta">
+            <p class="exp-date">Dec 2017 – May 2023</p>
+            <p class="exp-company">Shen Yun Performing Arts</p>
+            <p class="exp-location">New York, US</p>
+          </div>
+          <div class="exp-content">
+            <p class="exp-role">Principal Dancer &amp; Audience Engagement Specialist</p>
+            <ul class="exp-bullets">
+              <li>On-stage brand ambassador for a globally touring cultural organization — contributing to live audience engagement for 1M+ attendees annually across 200+ cities on five continents.</li>
+              <li>Delivered VIP patron reception experiences at Lincoln Center and Kennedy Center, reinforcing high-value brand relationships for Tier-1 donors and sponsors.</li>
+              <li>Trained 15+ touring performers on brand presentation standards, ensuring visual and cultural consistency across multiple simultaneously touring companies.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-item reveal">
+          <div class="exp-meta">
+            <p class="exp-date">Sep – Nov 2024</p>
+            <p class="exp-company">Rotary Asia Pacific Seminar</p>
+            <p class="exp-location">Taipei, Taiwan</p>
+          </div>
+          <div class="exp-content">
+            <p class="exp-role">Event Organizer — Grand Finale</p>
+            <ul class="exp-bullets">
+              <li>Coordinated performer programming and production logistics for a 300+ attendee international executive-level event at Taipei Grand Hotel.</li>
+              <li>Managed sourcing, scheduling, and live stage coordination across a multi-act program.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="cert-strip reveal">
+        <span class="cert-badge"><span class="cert-dot"></span>GA4 Certified — Google, 2026</span>
+        <span class="cert-badge"><span class="cert-dot"></span>BFA Classical Chinese Dance — Full Scholarship, Fei Tian College</span>
+        <span class="cert-badge"><span class="cert-dot"></span>Volkswagen Commercial — 2.4M+ YouTube Impressions</span>
+        <span class="cert-badge"><span class="cert-dot"></span>Chang Hwa Bank Visual Ambassador — 2-Year Campaign</span>
+      </div>
+
     </div>
   </section>
 
