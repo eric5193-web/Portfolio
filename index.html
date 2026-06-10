@@ -65,6 +65,79 @@
     }
     nav ul a:hover { color: var(--text); }
 
+    /* ── Hero ─────────────────────────────────────── */
+    #hero {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 60px;
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 120px 24px 60px;
+    }
+    #hero .hero-text { }
+    #hero .eyebrow {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 20px;
+    }
+    #hero h1 {
+      font-size: clamp(2.4rem, 5vw, 4rem);
+      font-weight: 700;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      margin-bottom: 20px;
+    }
+    #hero .subtitle {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.7;
+      max-width: 420px;
+      margin-bottom: 36px;
+    }
+    #hero .cta-group { display: flex; gap: 14px; flex-wrap: wrap; }
+    .btn-primary {
+      display: inline-block;
+      padding: 12px 28px;
+      background: var(--accent);
+      color: #fff;
+      font-size: 13px;
+      font-weight: 600;
+      border-radius: 6px;
+      letter-spacing: 0.04em;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .btn-primary:hover { background: var(--accent-hover); transform: translateY(-2px); }
+    .btn-outline {
+      display: inline-block;
+      padding: 12px 28px;
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 13px;
+      font-weight: 500;
+      border-radius: 6px;
+      letter-spacing: 0.04em;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .btn-outline:hover { border-color: var(--text-muted); color: var(--text); }
+    #hero .hero-image {
+      display: flex;
+      justify-content: center;
+    }
+    #hero .hero-image img {
+      width: 380px;
+      height: 480px;
+      object-fit: cover;
+      object-position: top;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      box-shadow: 0 0 60px rgba(43,0,255,0.15);
+    }
+
     /* ── Reveal animation ──────────────────────────── */
     .reveal {
       opacity: 0;
@@ -96,6 +169,25 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-text">
+      <p class="eyebrow reveal">NYU Integrated Marketing · silueta.ai</p>
+      <h1 class="reveal" style="transition-delay:0.1s">Poyuan<br>(Eric) Wang</h1>
+      <p class="subtitle reveal" style="transition-delay:0.2s">
+        Marketing Analytics &amp; AI-Augmented Brand Strategy.<br>
+        Compressing team workflows into single-operator pipelines.
+      </p>
+      <div class="cta-group reveal" style="transition-delay:0.3s">
+        <a href="#internship" class="btn-primary">View Work</a>
+        <a href="#contact" class="btn-outline">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-image reveal" style="transition-delay:0.2s">
+      <img src="assets/eric-headshot.png" alt="Poyuan (Eric) Wang">
+    </div>
+  </section>
 
   <!-- sections go here -->
 
