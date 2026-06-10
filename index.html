@@ -419,6 +419,39 @@
       color: var(--text-muted);
       line-height: 1.6;
     }
+
+    /* ── Contact ───────────────────────────────────── */
+    #contact {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      text-align: center;
+    }
+    #contact .contact-inner { max-width: 600px; margin: 0 auto; }
+    #contact .contact-tagline {
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+    #contact .contact-sub {
+      font-size: 15px;
+      color: var(--text-muted);
+      margin-bottom: 40px;
+    }
+    #contact .contact-links {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    footer {
+      padding: 24px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border);
+    }
   </style>
 </head>
 <body>
@@ -622,6 +655,25 @@
       </div>
     </div>
   </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-inner">
+      <div class="contact-inner">
+        <p class="section-label reveal">Contact</p>
+        <h2 class="contact-tagline reveal">Let's work together.</h2>
+        <p class="contact-sub reveal">Open to marketing roles, brand collaborations, and internship opportunities.</p>
+        <div class="contact-links reveal">
+          <a href="mailto:pw2591@nyu.edu" class="btn-primary">pw2591@nyu.edu</a>
+          <a href="https://linkedin.com/in/poyuan-wang-393751360" target="_blank" class="btn-outline">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Poyuan (Eric) Wang · NYU Integrated Marketing</p>
+  </footer>
 
   <script>
     // Scroll reveal
