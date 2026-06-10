@@ -326,6 +326,58 @@
       transform: scale(1.02);
       border-color: var(--accent);
     }
+
+    /* ── Projects ──────────────────────────────────── */
+    #projects { background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    #projects .projects-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+    .project-card {
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 36px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      transition: border-color 0.25s, transform 0.25s;
+    }
+    .project-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-4px);
+    }
+    .project-card .card-tag {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .project-card h3 {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.3;
+      letter-spacing: -0.01em;
+    }
+    .project-card p {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.7;
+      flex: 1;
+    }
+    .project-card .card-links {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 8px;
+    }
+    .card-links .btn-primary,
+    .card-links .btn-outline {
+      font-size: 12px;
+      padding: 9px 18px;
+    }
   </style>
 </head>
 <body>
@@ -449,6 +501,40 @@
           <img src="assets/silueta-post-3.png" alt="silueta.ai post — skin campaign">
           <img src="assets/silueta-post-4.png" alt="silueta.ai post — brand campaign">
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-inner">
+      <p class="section-label reveal">Course Projects</p>
+      <h2 class="section-title reveal">Academic work, real results.</h2>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <span class="card-tag">Campaign Strategy · Media Planning</span>
+          <h3>Mercedes-Benz GLC — Competitive Market Research &amp; Media Strategy</h3>
+          <p>
+            Identified CA's 20–25% EV share as GLC's primary threat using DMA research (Mintel 2025, Cox Automotive). Repositioned GLC against Tesla — from performance specs to premium passenger experience. Built a $25M, 296M-impression media plan across SF/LA/SD with 4 audience moments. Produced 3 AI-assisted creatives commended by professor (active tech CMO).
+          </p>
+          <div class="card-links">
+            <a href="assets/mb-landing/Landing page_dark.html" target="_blank" class="btn-primary">View Landing Page</a>
+            <a href="assets/mb-deck-updated.pdf" target="_blank" class="btn-outline">View Deck</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <span class="card-tag">Data Analytics · Direct Marketing</span>
+          <h3>Applebee's eClub — Customer Segmentation &amp; Direct Marketing ROI Analysis</h3>
+          <p>
+            Applied RFM segmentation to 400 eClub records — surfacing VIP ($391 avg spend, 18 visits/yr) and Loyal ($232, 11 visits/yr) segments as primary targets. Designed a 3-wave DM + email campaign reaching 100K recipients within a $250K budget. Modeled $205K spend projecting $252K revenue at 22.9% ROI. Built a 6-KPI dashboard targeting ≥17.2% redemption rate and ≥35% 90-day repeat visit rate.
+          </p>
+          <div class="card-links">
+            <a href="assets/applebees-deck.pdf" target="_blank" class="btn-primary">View Analysis</a>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
