@@ -1,7 +1,7 @@
 # Poyuan (Eric) Wang — Portfolio Site
 
 NYU Integrated Marketing final internship portfolio.
-**Live URL:** _to be added after GitHub Pages deployment_
+**Live URL:** https://eric5193-web.github.io/Portfolio/
 
 ---
 
