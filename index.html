@@ -394,12 +394,37 @@
       overflow: hidden;
       border-radius: 10px;
       border: 1px solid var(--border);
+      cursor: pointer;
     }
-    .media-item .video-wrap iframe {
+    .media-item .video-wrap iframe,
+    .media-item .video-wrap img {
       position: absolute;
       top: 0; left: 0;
       width: 100%; height: 100%;
       border: none;
+      object-fit: cover;
+    }
+    .media-item .video-wrap .play-btn {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 64px; height: 64px;
+      background: rgba(0,0,0,0.75);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s, transform 0.2s;
+      pointer-events: none;
+    }
+    .media-item .video-wrap:hover .play-btn {
+      background: var(--accent);
+      transform: translate(-50%, -50%) scale(1.08);
+    }
+    .media-item .video-wrap .play-btn svg {
+      width: 24px; height: 24px;
+      fill: #fff;
+      margin-left: 4px;
     }
     .media-item .media-brand {
       font-size: 11px;
@@ -651,13 +676,11 @@
       <div class="media-grid">
 
         <div class="media-item reveal">
-          <div class="video-wrap">
-            <iframe
-              src="https://www.youtube.com/embed/06l52ERbgaE"
-              title="Volkswagen Commercial Vehicles Campaign"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen>
-            </iframe>
+          <div class="video-wrap" data-vid="06l52ERbgaE">
+            <img src="https://img.youtube.com/vi/06l52ERbgaE/maxresdefault.jpg" alt="Volkswagen Commercial Vehicles Campaign">
+            <div class="play-btn">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </div>
           </div>
           <div class="media-meta">
             <p class="media-brand">Volkswagen</p>
@@ -667,13 +690,11 @@
         </div>
 
         <div class="media-item reveal">
-          <div class="video-wrap">
-            <iframe
-              src="https://www.youtube.com/embed/qjB16vRecDs"
-              title="Chang Hwa Commercial Bank Visual Campaign"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen>
-            </iframe>
+          <div class="video-wrap" data-vid="qjB16vRecDs">
+            <img src="https://img.youtube.com/vi/qjB16vRecDs/maxresdefault.jpg" alt="Chang Hwa Commercial Bank Visual Campaign">
+            <div class="play-btn">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </div>
           </div>
           <div class="media-meta">
             <p class="media-brand">Chang Hwa Commercial Bank</p>
@@ -716,6 +737,13 @@
       });
     }, { threshold: 0.1 });
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    document.querySelectorAll('.video-wrap[data-vid]').forEach(wrap => {
+      wrap.addEventListener('click', () => {
+        const vid = wrap.dataset.vid;
+        wrap.innerHTML = `<iframe src="https://www.youtube.com/embed/${vid}?autoplay=1" title="YouTube video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+      });
+    });
   </script>
 
 </body>
