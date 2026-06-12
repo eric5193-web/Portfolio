@@ -506,6 +506,128 @@
       padding: 9px 18px;
     }
 
+    /* ── Card Dashboards ──────────────────────────── */
+    .card-dashboard { margin-top: 4px; }
+
+    /* Mercedes-Benz: 4-col grid */
+    .mb-dashboard {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .mb-metric {
+      background: var(--bg);
+      padding: 16px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .mb-num {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: -0.02em;
+      font-variant-numeric: tabular-nums;
+      line-height: 1;
+    }
+    .mb-num .unit { font-size: 13px; color: var(--accent); font-weight: 600; }
+    .mb-label {
+      font-size: 10px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+    .mb-chips { display: flex; flex-wrap: wrap; gap: 4px; }
+    .mb-chip {
+      font-size: 10px;
+      padding: 2px 6px;
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      color: var(--text-muted);
+    }
+
+    /* Applebee's dashboard */
+    .ab-dashboard { display: flex; flex-direction: column; gap: 12px; }
+    .ab-segs { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .ab-seg {
+      padding: 14px 16px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--bg);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .ab-seg.vip { border-color: rgba(43,0,255,0.4); }
+    .ab-seg-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .ab-seg-spend {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: -0.02em;
+      font-variant-numeric: tabular-nums;
+      line-height: 1;
+    }
+    .ab-seg-sub { font-size: 11px; color: var(--text-muted); }
+    .ab-bar-track {
+      height: 3px;
+      background: var(--border);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+    .ab-bar-fill {
+      height: 100%;
+      background: var(--accent);
+      width: 0;
+      border-radius: 2px;
+      transition: width 1.2s cubic-bezier(0.4,0,0.2,1) 0.2s;
+    }
+    .ab-roi {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px 16px;
+      background: var(--bg);
+    }
+    .ab-roi-step { flex: 1; display: flex; flex-direction: column; gap: 3px; }
+    .ab-roi-num {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text);
+      font-variant-numeric: tabular-nums;
+      line-height: 1;
+    }
+    .ab-roi-lbl {
+      font-size: 10px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .ab-roi-arrow { color: var(--text-muted); font-size: 12px; flex-shrink: 0; }
+    .ab-roi-step.highlight .ab-roi-num { color: var(--accent); font-size: 20px; }
+    .ab-kpis { display: flex; gap: 6px; flex-wrap: wrap; }
+    .ab-kpi {
+      font-size: 11px;
+      padding: 4px 10px;
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      color: var(--text-muted);
+      background: var(--bg);
+      font-variant-numeric: tabular-nums;
+    }
+
     /* ── Media ─────────────────────────────────────── */
     #media { border-top: 1px solid var(--border); }
     #media .media-grid {
@@ -643,9 +765,9 @@
     <a href="#" class="logo" aria-label="Eric Wang — home">Eric Wang</a>
     <ul>
       <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
       <li><a href="#internship">Internship</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
       <li><a href="#media">Media</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -732,6 +854,133 @@
     </div>
   </section>
 
+
+  <!-- INTERNSHIP -->
+  <section id="internship">
+    <div class="section-inner">
+      <p class="section-label reveal">Current Internship</p>
+      <h2 class="section-title reveal">Creator Brand &amp; Social Media<br>@ silueta.ai</h2>
+      <div class="internship-grid">
+        <div>
+          <div class="company-badge reveal">
+            <span class="dot"></span>
+            silueta.ai — Active 2026
+          </div>
+          <p class="role-title reveal">Creator Brand &amp; Social Media Marketing Intern</p>
+          <p class="internship-desc reveal">
+            Silueta is a creator-commerce startup building infrastructure for creator-led brands — where tastemakers curate, audiences validate, and the platform produces. As one of the first marketing hires, I work directly with the founding team to build the brand's social presence and creator partner pipeline from the ground up.
+          </p>
+          <ul>
+            <li class="reveal">Built an AI-augmented content pipeline — researching competitor accounts, analyzing traffic sources, and auto-generating 25–35 weekly IG/TikTok content suggestions to accelerate creative output for a fast-paced startup launch.</li>
+            <li class="reveal">Conducted competitive research and prospected creator partner accounts via social platforms — qualifying fit, analyzing traffic sources, and producing a weekly outreach target list to support the founding team's BD pipeline.</li>
+            <li class="reveal">Built the official @silueta_ai Instagram account from zero, establishing brand voice and editorial aesthetic across all posts.</li>
+            <li class="reveal">Built analytical dashboards tracking traffic sources, engagement, and platform KPIs — translating raw campaign data into weekly creative storytelling reports that drove iterative optimization for stakeholders.</li>
+          </ul>
+        </div>
+        <div class="ig-grid reveal">
+          <img src="assets/silueta-post-2.png" alt="silueta.ai Instagram profile" style="object-fit: cover; object-position: center 42%; aspect-ratio: 16/7; grid-column: span 2;">
+          <img src="assets/silueta-post-3.png" alt="silueta.ai Instagram feed">
+          <img src="assets/silueta-post-4.png" alt="silueta.ai post — brand campaign">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-inner">
+      <p class="section-label reveal">Course Projects</p>
+      <h2 class="section-title reveal">Academic work, real results.</h2>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <span class="card-tag">Campaign Strategy · Media Planning</span>
+          <h3>Mercedes-Benz GLC — Competitive Market Research &amp; Media Strategy</h3>
+          <ul>
+            <li>Leveraged DMA research (Mintel 2025, Cox Automotive) to identify CA's 20–25% EV share as GLC's primary threat; segmented target (ages 27–40, $120K+ HHI) and repositioned GLC against Tesla from performance specs to premium passenger experience.</li>
+            <li>Built a $25M, 296M-impression media plan (SF/LA/SD) across 4 audience moments (dating apps, CTV, YouTube, DOOH); developed an analytical dashboard to visualize audience data and support creative storytelling; produced 3 AI-assisted creatives commended by professor (active tech CMO).</li>
+          </ul>
+          <div class="card-dashboard mb-dashboard reveal">
+            <div class="mb-metric">
+              <div class="mb-num">$<span class="count-up" data-target="25">0</span><span class="unit">M</span></div>
+              <div class="mb-label">Media Budget</div>
+            </div>
+            <div class="mb-metric">
+              <div class="mb-num"><span class="count-up" data-target="296">0</span><span class="unit">M</span></div>
+              <div class="mb-label">Impressions</div>
+            </div>
+            <div class="mb-metric">
+              <div class="mb-num" style="font-size:15px;letter-spacing:0.05em">SF · LA · SD</div>
+              <div class="mb-label">Target DMAs</div>
+            </div>
+            <div class="mb-metric">
+              <div class="mb-chips">
+                <span class="mb-chip">Dating Apps</span>
+                <span class="mb-chip">CTV</span>
+                <span class="mb-chip">YouTube</span>
+                <span class="mb-chip">DOOH</span>
+              </div>
+              <div class="mb-label">4 Audience Moments</div>
+            </div>
+          </div>
+          <div class="card-links">
+            <a href="assets/mb-landing/Landing page_dark.html" target="_blank" class="btn-primary">View Landing Page</a>
+            <a href="assets/mb-deck-updated.pdf" target="_blank" class="btn-outline">View Deck</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <span class="card-tag">Data Analytics · Direct Marketing</span>
+          <h3>Applebee's eClub — Customer Segmentation &amp; Direct Marketing ROI Analysis</h3>
+          <ul>
+            <li>Applied RFM segmentation to 400 eClub records — surfacing VIP ($391 avg spend, 18 visits/yr) and Loyal ($232, 11 visits/yr) segments as primary targets; designed a 3-wave DM + email campaign reaching 100K recipients within a $250K budget.</li>
+            <li>Modeled $205K spend projecting $252K revenue at 22.9% ROI (email +60% / DM +12.5%); built a 6-KPI analytical dashboard translating campaign data into a performance narrative — targeting ≥17.2% redemption rate, ≤$11.92 cost per redemption, and ≥35% 90-day repeat visit rate.</li>
+          </ul>
+          <div class="card-dashboard ab-dashboard reveal">
+            <div class="ab-segs">
+              <div class="ab-seg vip">
+                <div class="ab-seg-label">VIP Segment</div>
+                <div class="ab-seg-spend">$391 <span style="font-size:12px;font-weight:400;color:var(--text-muted)">avg spend</span></div>
+                <div class="ab-bar-track"><div class="ab-bar-fill" data-fill="100"></div></div>
+                <div class="ab-seg-sub">18 visits / yr</div>
+              </div>
+              <div class="ab-seg">
+                <div class="ab-seg-label">Loyal Segment</div>
+                <div class="ab-seg-spend">$232 <span style="font-size:12px;font-weight:400;color:var(--text-muted)">avg spend</span></div>
+                <div class="ab-bar-track"><div class="ab-bar-fill" data-fill="59"></div></div>
+                <div class="ab-seg-sub">11 visits / yr</div>
+              </div>
+            </div>
+            <div class="ab-roi">
+              <div class="ab-roi-step">
+                <div class="ab-roi-num">$205K</div>
+                <div class="ab-roi-lbl">Spend</div>
+              </div>
+              <span class="ab-roi-arrow">→</span>
+              <div class="ab-roi-step">
+                <div class="ab-roi-num">$252K</div>
+                <div class="ab-roi-lbl">Revenue</div>
+              </div>
+              <span class="ab-roi-arrow">→</span>
+              <div class="ab-roi-step highlight">
+                <div class="ab-roi-num">22.9%</div>
+                <div class="ab-roi-lbl">ROI</div>
+              </div>
+            </div>
+            <div class="ab-kpis">
+              <span class="ab-kpi">≥17.2% redemption</span>
+              <span class="ab-kpi">≤$11.92 CPR</span>
+              <span class="ab-kpi">≥35% repeat</span>
+            </div>
+          </div>
+          <div class="card-links">
+            <a href="assets/applebees-deck.pdf" target="_blank" class="btn-primary">View Analysis</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
   <!-- EXPERIENCE -->
   <section id="experience">
     <div class="section-inner">
@@ -814,73 +1063,6 @@
     </div>
   </section>
 
-  <!-- INTERNSHIP -->
-  <section id="internship">
-    <div class="section-inner">
-      <p class="section-label reveal">Current Internship</p>
-      <h2 class="section-title reveal">Creator Brand &amp; Social Media<br>@ silueta.ai</h2>
-      <div class="internship-grid">
-        <div>
-          <div class="company-badge reveal">
-            <span class="dot"></span>
-            silueta.ai — Active 2026
-          </div>
-          <p class="role-title reveal">Creator Brand &amp; Social Media Marketing Intern</p>
-          <p class="internship-desc reveal">
-            Silueta is a creator-commerce startup building infrastructure for creator-led brands — where tastemakers curate, audiences validate, and the platform produces. As one of the first marketing hires, I work directly with the founding team to build the brand's social presence and creator partner pipeline from the ground up.
-          </p>
-          <ul>
-            <li class="reveal">Built an AI-augmented content pipeline — researching competitor accounts, analyzing traffic sources, and auto-generating 25–35 weekly IG/TikTok content suggestions to accelerate creative output for a fast-paced startup launch.</li>
-            <li class="reveal">Conducted competitive research and prospected creator partner accounts via social platforms — qualifying fit, analyzing traffic sources, and producing a weekly outreach target list to support the founding team's BD pipeline.</li>
-            <li class="reveal">Built the official @silueta_ai Instagram account from zero, establishing brand voice and editorial aesthetic across all posts.</li>
-            <li class="reveal">Built analytical dashboards tracking traffic sources, engagement, and platform KPIs — translating raw campaign data into weekly creative storytelling reports that drove iterative optimization for stakeholders.</li>
-          </ul>
-        </div>
-        <div class="ig-grid reveal">
-          <img src="assets/silueta-post-2.png" alt="silueta.ai Instagram profile" style="object-fit: cover; object-position: center 42%; aspect-ratio: 16/7; grid-column: span 2;">
-          <img src="assets/silueta-post-3.png" alt="silueta.ai Instagram feed">
-          <img src="assets/silueta-post-4.png" alt="silueta.ai post — brand campaign">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects">
-    <div class="section-inner">
-      <p class="section-label reveal">Course Projects</p>
-      <h2 class="section-title reveal">Academic work, real results.</h2>
-      <div class="projects-grid">
-
-        <div class="project-card reveal">
-          <span class="card-tag">Campaign Strategy · Media Planning</span>
-          <h3>Mercedes-Benz GLC — Competitive Market Research &amp; Media Strategy</h3>
-          <ul>
-            <li>Leveraged DMA research (Mintel 2025, Cox Automotive) to identify CA's 20–25% EV share as GLC's primary threat; segmented target (ages 27–40, $120K+ HHI) and repositioned GLC against Tesla from performance specs to premium passenger experience.</li>
-            <li>Built a $25M, 296M-impression media plan (SF/LA/SD) across 4 audience moments (dating apps, CTV, YouTube, DOOH); developed an analytical dashboard to visualize audience data and support creative storytelling; produced 3 AI-assisted creatives commended by professor (active tech CMO).</li>
-          </ul>
-          <div class="card-links">
-            <a href="assets/mb-landing/Landing page_dark.html" target="_blank" class="btn-primary">View Landing Page</a>
-            <a href="assets/mb-deck-updated.pdf" target="_blank" class="btn-outline">View Deck</a>
-          </div>
-        </div>
-
-        <div class="project-card reveal">
-          <span class="card-tag">Data Analytics · Direct Marketing</span>
-          <h3>Applebee's eClub — Customer Segmentation &amp; Direct Marketing ROI Analysis</h3>
-          <ul>
-            <li>Applied RFM segmentation to 400 eClub records — surfacing VIP ($391 avg spend, 18 visits/yr) and Loyal ($232, 11 visits/yr) segments as primary targets; designed a 3-wave DM + email campaign reaching 100K recipients within a $250K budget.</li>
-            <li>Modeled $205K spend projecting $252K revenue at 22.9% ROI (email +60% / DM +12.5%); built a 6-KPI analytical dashboard translating campaign data into a performance narrative — targeting ≥17.2% redemption rate, ≤$11.92 cost per redemption, and ≥35% 90-day repeat visit rate.</li>
-          </ul>
-          <div class="card-links">
-            <a href="assets/applebees-deck.pdf" target="_blank" class="btn-primary">View Analysis</a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
   <!-- MEDIA -->
   <section id="media">
     <div class="section-inner">
@@ -941,11 +1123,27 @@
   </footer>
 
   <script>
-    // Scroll reveal
+    function animateCount(el) {
+      const target = parseInt(el.dataset.target, 10);
+      const duration = 900;
+      const step = target / (duration / 16);
+      let current = 0;
+      const timer = setInterval(() => {
+        current += step;
+        if (current >= target) { el.textContent = target; clearInterval(timer); }
+        else { el.textContent = Math.floor(current); }
+      }, 16);
+    }
+
+    // Scroll reveal + dashboard animations
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(e => {
         if (e.isIntersecting) {
           e.target.classList.add('visible');
+          e.target.querySelectorAll('.count-up').forEach(animateCount);
+          e.target.querySelectorAll('.ab-bar-fill').forEach(bar => {
+            bar.style.width = bar.dataset.fill + '%';
+          });
           observer.unobserve(e.target);
         }
       });
