@@ -628,6 +628,62 @@
       font-variant-numeric: tabular-nums;
     }
 
+    /* ── Testimonials ──────────────────────────────── */
+    #testimonials { border-top: 1px solid var(--border); }
+    #testimonials .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .testimonial-card {
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      transition: border-color 0.25s;
+    }
+    .testimonial-card:hover { border-color: var(--accent); }
+    .testimonial-quote {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.8;
+      flex: 1;
+      position: relative;
+      padding-top: 20px;
+    }
+    .testimonial-quote::before {
+      content: '\201C';
+      position: absolute;
+      top: -4px; left: 0;
+      font-size: 48px;
+      line-height: 1;
+      color: var(--accent);
+      font-family: Georgia, serif;
+      opacity: 0.6;
+    }
+    .testimonial-author { border-top: 1px solid var(--border); padding-top: 16px; }
+    .testimonial-name {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+    .testimonial-title {
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-bottom: 8px;
+    }
+    .testimonial-email {
+      font-size: 11px;
+      color: var(--accent);
+      opacity: 0.7;
+      letter-spacing: 0.02em;
+    }
+
     /* ── Media ─────────────────────────────────────── */
     #media { border-top: 1px solid var(--border); }
     #media .media-grid {
@@ -751,6 +807,7 @@
       #internship .internship-grid { grid-template-columns: 1fr; gap: 48px; }
       #projects .projects-grid { grid-template-columns: 1fr; }
       #media .media-grid { grid-template-columns: 1fr; }
+      #testimonials .testimonials-grid { grid-template-columns: 1fr; }
     }
 
     @media (max-width: 480px) {
@@ -768,6 +825,7 @@
       <li><a href="#internship">Internship</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#experience">Experience</a></li>
+      <li><a href="#testimonials">References</a></li>
       <li><a href="#media">Media</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -1060,6 +1118,44 @@
         <span class="cert-badge"><span class="cert-dot"></span>Chang Hwa Bank Visual Ambassador — 2-Year Campaign</span>
       </div>
 
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials">
+    <div class="section-inner">
+      <p class="section-label reveal">References</p>
+      <h2 class="section-title reveal">What others say.</h2>
+      <div class="testimonials-grid">
+
+        <div class="testimonial-card reveal">
+          <p class="testimonial-quote">Eric developed a full marketing strategy for a dance studio startup in my course — and what stood out was how thoroughly he grounded every decision in data. His research went well beyond the surface, and he translated complex market insights into a clear, compelling business narrative. Eric earned top marks, and the analytical rigor he brought to that project is the kind you'd expect from someone well beyond the graduate level.</p>
+          <div class="testimonial-author">
+            <p class="testimonial-name">Sarwar Ahmed</p>
+            <p class="testimonial-title">Professor, NYU Integrated Marketing · Business Consultant, Sarwar Consulting LLC</p>
+            <p class="testimonial-email">sarwar.ahmed@live.com</p>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <p class="testimonial-quote">As someone who works with senior leaders daily, I know what real strategic thinking looks like — and Eric has it. Across multiple projects in my course, he demonstrated the ability to go deep on research, synthesize complex information, and present his conclusions with genuine conviction. He's not just a strong student; he's someone who already thinks and communicates like a leader.</p>
+          <div class="testimonial-author">
+            <p class="testimonial-name">Kathryn Landis</p>
+            <p class="testimonial-title">Professor, NYU Integrated Marketing · Executive Coach, Kathryn Landis Consulting</p>
+            <p class="testimonial-email">klandis23@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <p class="testimonial-quote">Eric managed three concurrent classes simultaneously while coordinating curriculum, rehearsal schedules, and public-facing performances — largely on his own. What impressed me most was his ability to take a group of individual students and build them into a cohesive, high-performing ensemble. He handles complexity without losing attention to detail, and he leads by earning trust rather than demanding it.</p>
+          <div class="testimonial-author">
+            <p class="testimonial-name">Chang-Ruey Ay, Ph.D.</p>
+            <p class="testimonial-title">Director, Fu Hsing Academy of the Arts</p>
+            <p class="testimonial-email">ericay2020@alum.ccu.edu.tw</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
