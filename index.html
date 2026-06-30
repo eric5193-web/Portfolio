@@ -431,6 +431,24 @@
       transform: scale(1.02);
       border-color: var(--accent);
     }
+    #internship .ig-calendar { margin: 12px 0 0; }
+    #internship .ig-calendar img {
+      width: 100%;
+      display: block;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      transition: transform 0.3s, border-color 0.3s;
+    }
+    #internship .ig-calendar img:hover {
+      transform: scale(1.02);
+      border-color: var(--accent);
+    }
+    #internship .ig-calendar figcaption {
+      margin-top: 6px;
+      font-size: 11px;
+      color: var(--text-muted);
+      text-align: right;
+    }
 
     /* ── Projects ──────────────────────────────────── */
     #projects { background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
@@ -567,15 +585,50 @@
     /* Yujia card: deck screenshots beside the text */
     .yj-layout { display: flex; gap: 28px; align-items: center; }
     .yj-main { flex: 1; min-width: 0; }
-    .yj-gallery { display: flex; flex-direction: column; justify-content: center; gap: 14px; width: 380px; flex-shrink: 0; }
+    .yj-side { display: flex; flex-direction: column; justify-content: center; width: 380px; flex-shrink: 0; }
+    .yj-gallery { display: flex; flex-direction: column; gap: 14px; }
     .yj-gallery a { display: block; border-radius: 8px; overflow: hidden; border: 1px solid var(--border); transition: border-color 0.2s; }
     .yj-gallery a:hover { border-color: var(--text-muted); }
     .yj-gallery img { width: 100%; height: auto; aspect-ratio: 1.89; object-fit: cover; display: block; transition: transform 0.3s; }
     .yj-gallery a:hover img { transform: scale(1.04); }
 
+    .yj-posted { margin-top: 18px; }
+    .yj-posted-label {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+    .yj-posted-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+    .yj-photo-placeholder {
+      aspect-ratio: 1;
+      border: 1px dashed var(--border);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-muted);
+    }
+    .yj-photo-placeholder svg { width: 18px; height: 18px; opacity: 0.5; }
+    .yj-posted-grid a.yj-photo-placeholder {
+      border-style: solid;
+      overflow: hidden;
+      transition: border-color 0.2s;
+    }
+    .yj-posted-grid a.yj-photo-placeholder:hover { border-color: var(--text-muted); }
+    .yj-posted-grid a.yj-photo-placeholder img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s;
+    }
+    .yj-posted-grid a.yj-photo-placeholder:hover img { transform: scale(1.04); }
+
     @media (max-width: 768px) {
       .yj-layout { flex-direction: column; align-items: stretch; }
-      .yj-gallery { flex-direction: row; width: 100%; }
+      .yj-gallery { flex-direction: row; }
     }
 
     /* Applebee's dashboard */
@@ -963,10 +1016,15 @@
             <li class="reveal">Built analytical dashboards tracking traffic sources, engagement, and platform KPIs — translating raw campaign data into weekly creative storytelling reports that drove iterative optimization for stakeholders.</li>
           </ul>
         </div>
-        <div class="ig-grid reveal">
-          <img src="assets/silueta-post-2.png" alt="silueta.ai Instagram profile" style="object-fit: cover; object-position: center 42%; aspect-ratio: 16/7; grid-column: span 2;">
-          <img src="assets/silueta-post-3.png" alt="silueta.ai Instagram feed">
-          <img src="assets/silueta-post-4.png" alt="silueta.ai post — brand campaign">
+        <div>
+          <div class="ig-grid reveal">
+            <img src="assets/silueta-post-3.png" alt="silueta.ai Instagram feed">
+            <img src="assets/silueta-post-4.png" alt="silueta.ai post — brand campaign">
+          </div>
+          <figure class="ig-calendar reveal">
+            <img src="assets/silueta-content-calendar.png" alt="silueta.ai content calendar spreadsheet">
+            <figcaption>Social Media Calendar</figcaption>
+          </figure>
         </div>
       </div>
     </div>
@@ -976,7 +1034,7 @@
   <section id="projects">
     <div class="section-inner">
       <p class="section-label reveal">Course Projects</p>
-      <h2 class="section-title reveal">Academic work, real results.</h2>
+      <h2 class="section-title reveal">Academic work, real results - NYU</h2>
       <div class="projects-grid">
 
         <div class="project-card reveal" style="grid-column: 1 / -1; max-width: 1180px; margin: 0 auto;">
@@ -985,8 +1043,10 @@
           <span class="card-tag">Social Media Strategy · Creator Campaign</span>
           <h3>East Meets Feed — @Yujia Cross-Platform Creator Activation</h3>
           <ul>
-            <li>Built ethnographic audience research and 4 personas (Mina, Jessica, Lummy, Felix) across Instagram, TikTok/Douyin, and Xiaohongshu for lifestyle creator @Yujia; designed a platform strategy matrix and 30-day <strong>organic activation plan</strong> targeting 5,000 cross-platform engagements with zero paid spend.</li>
             <li>Drove Douyin followers from <strong>13 to 1,317</strong> (×101) and likes from <strong>100 to 7,342</strong> (×73.4) across 18 posts, <strong>lifting total engagement to 8,584</strong> — 71.7% above goal; grew Instagram to 2,387 followers with a 10.1K-view top reel, and delivered a campaign performance dashboard plus a standalone creator portfolio site as a client-ready collab asset.</li>
+            <li>Built ethnographic audience research and 4 personas (Mina, Jessica, Lummy, Felix) across Instagram, TikTok/Douyin, and Xiaohongshu for lifestyle creator @Yujia; designed a platform strategy matrix and 30-day <strong>organic activation plan</strong> targeting 5,000 cross-platform engagements with zero paid spend.</li>
+            <li>Built an interactive campaign presentation deck from scratch using HTML, CSS, and JavaScript — vibe coded with Claude, featuring <strong>animated data visualizations and dual slide/scroll modes</strong>.</li>
+            <li><strong>Led and managed a 6-person team end-to-end</strong> — delegated research, strategy, and content tasks across members, maintained project timeline, and oversaw quality of all deliverables.</li>
           </ul>
           <div class="card-dashboard mb-dashboard mb-centered reveal">
             <div class="mb-metric">
@@ -1016,6 +1076,7 @@
             <a href="https://eric5193-web.github.io/Yujia-Social-Portfolio/" target="_blank" class="btn-outline">Creator Portfolio</a>
           </div>
         </div>
+        <div class="yj-side">
         <div class="yj-gallery">
           <a href="https://eric5193-web.github.io/yujia_Finalbp_deck/#slide-17" target="_blank">
             <img src="assets/yujia/deck-content-funnel.png" alt="Content funnel slide from the East Meets Feed deck">
@@ -1023,6 +1084,21 @@
           <a href="https://eric5193-web.github.io/yujia_Finalbp_deck/#slide-18" target="_blank">
             <img src="assets/yujia/deck-ig-content-concepts.png" alt="Instagram content concepts slide from the East Meets Feed deck">
           </a>
+        </div>
+        <div class="yj-posted">
+          <div class="yj-posted-label">Posted Social Work — @Yujia</div>
+          <div class="yj-posted-grid">
+            <a class="yj-photo-placeholder" href="https://www.douyin.com/user/MS4wLjABAAAAHqwW_iV49JcvdCOwp0aIUYShwwsueX6_mGVabM3KNSL-7oaShsCfQD6a54KVxmL5?from_tab_name=main&amp;modal_id=7655600138748465339" target="_blank">
+              <img src="assets/yujia/post-1.png" alt="@Yujia Douyin post — airport laptop moment">
+            </a>
+            <a class="yj-photo-placeholder" href="https://www.instagram.com/p/DZAze9XRwZf/" target="_blank">
+              <img src="assets/yujia/post-2.png" alt="@Yujia Instagram post — Central Park golden hour">
+            </a>
+            <a class="yj-photo-placeholder" href="https://www.douyin.com/user/MS4wLjABAAAAHqwW_iV49JcvdCOwp0aIUYShwwsueX6_mGVabM3KNSL-7oaShsCfQD6a54KVxmL5?from_tab_name=main&amp;modal_id=7654053861209083301" target="_blank">
+              <img src="assets/yujia/post-3.jpg" alt="@Yujia Douyin post">
+            </a>
+          </div>
+        </div>
         </div>
         </div>
         </div>
